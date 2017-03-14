@@ -96,13 +96,13 @@ updatePage()
 
 // Keep the requested joke up-to-date
 requestedJokeInput.addEventListener('input', updateDisplayedJoke)
-/* This parts forgets jokes */
+/* This part forgets jokes */
 buttonForget.addEventListener('click', function () {
   var forgetJoke = document.getElementById('forgetJoke').value
   delete jokes[forgetJoke]
   setJokes()
 })
-/* This parts remembers jokes */
+/* This part remembers jokes */
 buttonRemember.addEventListener('click', function () {
   var rememberJoke = document.getElementById('rememberJoke').value
   var jokeSetup = document.getElementById('setup').value
